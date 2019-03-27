@@ -61,8 +61,10 @@ void main()
 	looplist L;
 	int ini_m;		//初始化m的值
 	int n;		//定义人数
-	scanf_s("请输入总人数：%d", &n);
-	scanf_s("请输入初始密码：%d", &m);
+        printf("请输入总人数：");
+	scanf_s("%d", &n);
+	printf("请输入初始密码：");
+	scanf_s("%d", &m);
 	if (n <= 0||m<=0) { printf("输入需为正"); return -1; }		//如果输入的人数/初始密码小于等于0则报错
 
 	printf("请按顺序输入每个人的密码值(个数不超过总人数)：");
